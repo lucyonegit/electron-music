@@ -23,10 +23,8 @@
 </template>
 <script>
 const {ipcRenderer: ipc} = require('electron');
-import { Button, Table,Icon,Modal } from 'iview';
 export default {
   name:"topbar",
-  components:{Button, Table},
   data(){
     return{
       modal: false,
@@ -55,7 +53,7 @@ export default {
   .topbar{
     width: 100%;
     height: 45px;
-    background-color: rgb(236,236,236);
+    background-color: rgb(67,72,88);
     box-shadow: -1px -1px 12px 1px rgb(160,160,160);
     -webkit-app-region: drag;
     display: flex;
@@ -76,9 +74,10 @@ export default {
   #search_inp{ 
     width: 250px;
     height: 28px;
-    border: 1px solid rgb(210,210,210);
+    border: 1px solid rgb(180,180,180);
+    background-color: rgb(230,230,230);
     outline: none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding-left: 10px;
     color:rgb(110,110,110)
   }
@@ -105,5 +104,9 @@ export default {
 }
 .close:hover{
   color:#990000 !important;
+}
+.ivu-modal-footer button+button {
+    background-color: rgb(40,42,44);
+    border-radius: 30px;
 }
 </style>

@@ -9,7 +9,7 @@
 <script>
 
 import Topbar from "./components/topbar";
-import Main from "./components/maincontent"
+import Main from "./components/content"
   export default {
     name: 'music',
     components:{Topbar,Main}
@@ -21,5 +21,6 @@ import Main from "./components/maincontent"
     margin: 0;
     padding: 0;
     font-family: "微软雅黑";
+    background-color: rgb(220,220,220);
   }
 </style>
